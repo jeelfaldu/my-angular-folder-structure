@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
+import { LoadingService } from './shared/service/loading.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'fishelly';
+    constructor(private Loadingservice: LoadingService) {
+        // Loadingservice.showSpinner();
+     }
 }

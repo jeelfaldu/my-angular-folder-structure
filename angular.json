@@ -121,8 +121,16 @@
               "devServerTarget": "fishelly:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "fishelly"
+    }
+  },
+  "defaultProject": "fishelly",
+  "cli": {
+    "analytics": false
+  }
 }
